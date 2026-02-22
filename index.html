@@ -1,74 +1,122 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Chị tha lỗi cho em nhaaa chị Trúc?</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Cho e xin lỗi nha chị Trúc🥺</title>
 
-<style>
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffe6f0;
-    margin-top: 60px;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-h1 {
-    font-size: 38px;
-    color: #ff3399;
-}
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffd6e7, #fff);
+    }
 
-img {
-    width: 220px;
-    border-radius: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+    .container {
+      background: white;
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+    }
 
-button {
-    font-size: 20px;
-    padding: 10px 22px;
-    margin: 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-}
+    h1 {
+      color: #ff4d88;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
 
-#yes {
-    background-color: #ff66b2;
-    color: white;
-}
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
 
-#no {
-    background-color: #cccccc;
-    position: absolute;
-}
-</style>
+    .img-box {
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto 20px;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #ff6fa5;
+      color: white;
+    }
+
+    .yes:hover {
+      background: #ff4d88;
+    }
+
+    .no {
+      background: #d9d9d9;
+    }
+
+    .no:hover {
+      background: #bfbfbf;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Chị tha lỗi cho em nha chị Trúc? 🥺💗</h1>
+  <div class="container">
+    <h1>Chi tha lỗi cho em nha Chi Trúc? 🥺💗</h1>
 
-<!-- HÌNH CỦA BẠN -->
-<img src="mat_em.jpg" alt="xin lỗi màaa">
+    <div class="img-box">
+      <!-- ĐỔI LINK ẢNH Ở ĐÂY -->
+      <img src="https://i.imgur.com/3XKQX5v.png" alt="Xin lỗi" />
+    </div>
 
-<br>
+    <p>Em biết em sai rồi 😭 cho em cơ hội nhaaa</p>
 
-<button id="yes" onclick="yesClick()">Đồng ý 💕</button>
-<button id="no" onmouseover="moveButton()">Không 🙄</button>
+    <div class="buttons">
+      <button class="yes" onclick="dongY()">Đồng ý 💖</button>
+      <button class="no" onclick="khong()">Không 😢</button>
+    </div>
+  </div>
 
-<script>
-function yesClick() {
-    alert("Em biết màaa 😳💘");
-}
+  <script>
+    function dongY() {
+      alert("Cảm ơn Chi nhiều lắm 😭💗💗");
+    }
 
-function moveButton() {
-    var x = Math.random() * (window.innerWidth - 100);
-    var y = Math.random() * (window.innerHeight - 50);
-    document.getElementById('no').style.left = x + 'px';
-    document.getElementById('no').style.top = y + 'px';
-}
-</script>
+    function khong() {
+      alert("Thôi màaa đừng từ chối 😭");
+    }
+  </script>
 
 </body>
 </html>
