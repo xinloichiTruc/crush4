@@ -1,1 +1,62 @@
-https://github.com/xinloichiTruc/crush4/blob/main/README.md
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Em thích chị iu không?</title>
+
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff3399;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+#yes {
+    background-color: #ff66b2;
+    color: white;
+}
+
+#no {
+    background-color: #cccccc;
+    position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Chị iu có thích em không? 💖</h1>
+
+<button id="yes" onclick="yesClick()">Có 💕</button>
+<button id="no" onmouseover="moveButton()">Không 🙄</button>
+
+<script>
+function yesClick() {
+    alert("Em biết màaa 😳💘");
+}
+
+function moveButton() {
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+    document.getElementById('no').style.left = x + 'px';
+    document.getElementById('no').style.top = y + 'px';
+}
+</script>
+
+</body>
+</html>
